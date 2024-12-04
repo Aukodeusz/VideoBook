@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#155b73"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tytuł"
+        android:backgroundTint="#FFA726"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/editTextGenre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Gatunek"
+        android:backgroundTint="#FFA726"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/editTextReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Recenzja/Opis"
+        android:backgroundTint="#FFA726"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <SeekBar
+        android:id="@+id/seekBarRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:progressTint="#FF7043"
+        android:layout_marginBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp">
+        <RadioButton
+            android:id="@+id/radioButtonMovie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Film"
+            android:textColor="#FF7043" />
+        <RadioButton
+            android:id="@+id/radioButtonBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Książka"
+            android:textColor="#FF7043" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dodaj"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF7043"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:layout_gravity="center" />
+</LinearLayout>
